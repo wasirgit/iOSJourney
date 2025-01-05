@@ -90,5 +90,5 @@ class MySecondObject {
  
  We want to use a struct for things like:
   Data models
-  Obejcts that we create and pass around our app. 
+  Obejcts that we create and pass around our app.
  */
