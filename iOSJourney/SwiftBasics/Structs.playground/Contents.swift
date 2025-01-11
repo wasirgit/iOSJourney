@@ -52,7 +52,7 @@ struct UserModel {
 
 var user1: UserModel = UserModel(name: "Nick", isPremium: false)
 
-func markUserAsPremium() {
+@MainActor func markUserAsPremium() {
     print(user1)
     user1 = UserModel(name: user1.name, isPremium: true)
     print(user1)
@@ -70,7 +70,7 @@ struct UserModel2 {
 
 var user2 = UserModel2(name: "Nick", isPremium: false)
 
-func markUserAsPremium2() {
+@MainActor func markUserAsPremium2() {
     print(user2)
     
     // "mutate" the struct
